@@ -12,6 +12,18 @@ body {
   color: #fff;
 }
 
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+#home h2, #home p {
+  margin: 0;
+}
+
 .stars, .stars1, .stars2 {
   position: fixed;
   top: 0;
