@@ -17,7 +17,7 @@ export default [
         sourceType: 'module',
       },
     },
-    settings: { react: { version: '18.3' } },
+    settings: { react: { version: 'detect' } }, // Detecta automaticamente a versão do React
     plugins: {
       react,
       'react-hooks': reactHooks,
