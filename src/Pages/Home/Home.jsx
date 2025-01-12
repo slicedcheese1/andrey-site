@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './Home.css'
 import ProjectsSection from '../../Components/ProjectsSections/ProjectsSection'
 import ToolkitsSection from '../../Components/ToolkitsSections/ToolkitsSection'
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function Home() {
   const secoes = [
