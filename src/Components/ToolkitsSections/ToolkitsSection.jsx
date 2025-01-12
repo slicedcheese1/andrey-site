@@ -39,20 +39,6 @@ function ToolkitsSection() {
       experience: '3 Anos de experiência com a tecnologia.'
     },
     {
-      id: 'c',
-      name: 'C',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
-      description: 'Linguagem de programação de nível médio para sistemas embarcados.',
-      experience: '2 Anos de experiência com a tecnologia.'
-    },
-    {
-      id: 'cpp',
-      name: 'C++',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
-      description: 'Evolução da linguagem C com foco em POO.',
-      experience: '6 meses de experiência com a tecnologia.'
-    },
-    {
       id: 'python',
       name: 'Python',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
