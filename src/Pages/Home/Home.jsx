@@ -104,7 +104,7 @@ function Home() {
               <FaGithub />
             </a>
             <a
-              href='https://www.linkedin.com/in/andreygabriel'
+              href='https://www.linkedin.com/in/andrey-gabriel-dos-anjos/'
               target='_blank'
               rel='noreferrer'
             >
