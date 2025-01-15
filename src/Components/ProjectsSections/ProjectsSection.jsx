@@ -7,8 +7,8 @@ function ProjectsSection() {
     {
       id: 1,
       imgUrl: OticaPainel,
-      title: 'Lunari ERP',
-      description: 'Lunari é um Software integrado responsável pelo Controle de Estoque, Vendas e Finanças.',
+      title: 'Software para gestão de Óticas',
+      description: 'Software integrado responsável pelo Controle de Estoque, Vendas e Finanças.',
       lastUpdated: '3 mins ago',
       link: '/lunari-erp',
       tools: [

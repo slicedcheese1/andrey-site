@@ -1,8 +1,13 @@
 import { useState, useEffect } from 'react'
-import './Home.css'
 import ProjectsSection from '../../Components/ProjectsSections/ProjectsSection'
 import ToolkitsSection from '../../Components/ToolkitsSections/ToolkitsSection'
+
+import './Home.css'
+
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
+import Typed from 'typed.js'
+
 
 function Home() {
   const secoes = [
@@ -53,11 +58,26 @@ function Home() {
     }
   }, [])
 
+  // EFEITO DE DIGITAÇÃO
+  useEffect(() => {
+    const typed = new Typed('#typed', {
+      strings: ['Developer'], 
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    })
+
+    return () => {
+      typed.destroy()
+    }
+  }, [])
+
   return (
     <>
       <div className='estrelas'></div>
       <div className='estrelas1'></div>
       <div className='estrelas2'></div>
+
       <div className='barra-lateral'>
         {secoes.map((item) => (
           <p
@@ -69,35 +89,44 @@ function Home() {
           </p>
         ))}
       </div>
+
       <div className='conteudo'>
+
         <section id='inicio' className='secao animar-secao'>
           <h2>Andrey Gabriel</h2>
-          <p>Desenvolvedor Full Stack</p>
+
+          <p>
+            <span id='typed' className='digitando'></span>
+          </p>
         </section>
+
         <section id='ferramentas' className='secao animar-secao'>
           <h2 className='titulo-secao'>FERRAMENTAS</h2>
           <ToolkitsSection />
         </section>
+
         <section id='projetos' className='secao animar-secao'>
           <h2 className='titulo-secao'>PROJETOS</h2>
           <ProjectsSection />
         </section>
+
         <section id='sobre' className='secao animar-secao'>
           <h2 className='titulo-secao'>SOBRE</h2>
           <p>
             Nasci em 2003 em Manaus, Amazonas, e atualmente estou graduando em
-            Engenharia de Computação pela Universidade do Estado do Amazonas. Sou apaixonado pelo que faço e fascinado
-            em transformar problemas em soluções por meio de código. Acredito
-            que criar ferramentas que facilitem a vida das pessoas e resolvam
-            desafios do dia a dia não tem preço, e eu amo isso.
+            Engenharia de Computação pela Universidade do Estado do Amazonas. Sou
+            apaixonado pelo que faço e fascinado em transformar problemas em soluções
+            por meio de código. Acredito que criar ferramentas que facilitem a vida das
+            pessoas e resolvam desafios do dia a dia não tem preço, e eu amo isso.
           </p>
         </section>
+
         <section id='contato' className='secao animar-secao'>
           <h2 className='titulo-secao'>CONTATO</h2>
           <p>agdam683@gmail.com</p>
           <div className='icones-sociais'>
             <a
-              href='https://github.com/andreygabriel'
+              href='https://github.com/slicedcheese1'
               target='_blank'
               rel='noreferrer'
             >
